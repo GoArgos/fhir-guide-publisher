@@ -7,9 +7,11 @@ RUN apt-get update && \
             jekyll \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir /guide \
-    && mkdir /guide/output
+    && mkdir /guide/output \
+    && mkdir /yaml
 
 COPY . /publisher
 WORKDIR /publisher
 
-ENTRYPOINT /publisher/pub.sh
+ENTRYPOINT ["/publisher/pub.sh"]
+CMD []
