@@ -5,8 +5,8 @@ Docker image containing tools used to publish CA-Scratch.
 ### Use:
 ```
 docker run -it --name=fhir \
-  -v /local/path/to/CA-Scratch:/guide
-  -v /local/path/to/CA-Scratch-YAML:/yaml
+  -v /local/path/to/CA-Scratch:/guide \
+  -v /local/path/to/CA-Scratch-YAML:/yaml \
   havnfun/fhir-guide-publisher
 ```
 
