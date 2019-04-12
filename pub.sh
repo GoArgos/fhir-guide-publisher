@@ -1,13 +1,8 @@
 #!/bin/bash
-if [ -z "$1" ]; then
-  file=ig.json
+file="/guide/_genonce.sh"
+if [ -f "$file" ]; then
+  cd /guide
+  ./_genonce.sh
 else
-  file=$1
+  echo "Unexpected framework or no guide to publish."
 fi
-echo getting publisher
-curl -O http://build.fhir.org/org.hl7.fhir.igpublisher.jar
-echo getting rid of .DS_Store files since they gum up the igpublisher....
-find . -name '.DS_Store' -type f -delete
-echo running publisher
-cd /guide-in
-java  -Xms256m -Xmx1048m -jar /publisher/org.hl7.fhir.igpublisher.jar -ig $file -watch -tx $NA
