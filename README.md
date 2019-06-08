@@ -14,5 +14,8 @@ A menu will be displayed:
 
 1) Pull FHIR Resource from HL7 for editing (in YAML)
 2) Push Resources (YAML) to guide (as JSON)
-3) Publish Guide
-4) Quit
+3) Pull Resource (JSON) from guide for editing (as YAML)
+4) Publish Guide
+5) Quit
+
+(Note the option 3 will overwrite an existing file.)
