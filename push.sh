@@ -20,3 +20,4 @@ mv structuredefinition*.json $r_out
 mv valueset*.json $v_out
 cd $in
 cp *-intro.md $p_out
+cp index.md $p_out
