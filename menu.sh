@@ -1,8 +1,8 @@
 #!/bin/bash
 options=(
     "Pull HL7 FHIR Resource for editing (in YAML)"
+    "Pull Resource (JSON) from guide for editing (in YAML)"
     "Push Resource (YAML) to guide (as JSON)"
-    "Pull Resource (JSON) from guide for editing (as YAML)"
     "Publish Guide"
     "Quit"
 )
@@ -14,8 +14,8 @@ PS3="Enter a number (1-${#options[@]}): "
 select option in "${options[@]}"; do
     case "$REPLY" in
         1) ./pull.sh; break ;;
-        2) ./push.sh; break ;;
-        3) ./pull2.sh; break ;;
+        2) ./pull2.sh; break ;;
+        3) ./push.sh; break ;;
         4) ./pub.sh; break ;;
         5) break ;;
     esac

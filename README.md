@@ -13,8 +13,8 @@ docker run -it --name=fhir \
 A menu will be displayed:
 
 1) Pull FHIR Resource from HL7 for editing (in YAML)
-2) Push Resources (YAML) to guide (as JSON)
-3) Pull Resource (JSON) from guide for editing (as YAML)
+2) Pull Resource (JSON) from guide for editing (in YAML)
+3) Push Resources (YAML) to guide (as JSON)
 4) Publish Guide
 5) Quit
 
