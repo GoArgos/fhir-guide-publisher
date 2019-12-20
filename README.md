@@ -1,10 +1,10 @@
 # fhir-guide-publisher
 
-Docker image containing tools used to publish CA-Scratch.
+A Docker image to run the HL7 FHIR IG Publisher.
 
 ### Use:
 ```
-docker run -it --name=fhir \
+docker run -it --rm --name=fhir \
   -v /local/path/to/CA-Scratch:/guide \
   havnfun/fhir-guide-publisher
 ```
@@ -12,5 +12,4 @@ docker run -it --name=fhir \
 A menu will be displayed:
 
 1) Run IG Publisher
-2) Other Stuff
-3) Quit
+2) Quit

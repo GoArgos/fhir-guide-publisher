@@ -23,4 +23,4 @@ RUN pip install --upgrade setuptools \
 COPY . /publisher
 WORKDIR /publisher
 
-CMD ["/publisher/menu.sh"]
+CMD ["/publisher/pub_menu.sh"]
