@@ -5,7 +5,7 @@ RUN apt-get update && \
             software-properties-common \
             git \
             ant \
-            jekyll 
+            jekyll
 
 COPY . /publisher
 WORKDIR /publisher
