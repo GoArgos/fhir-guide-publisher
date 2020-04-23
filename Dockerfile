@@ -1,13 +1,7 @@
-FROM adoptopenjdk/openjdk8
+FROM jekyll/jekyll
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-            software-properties-common \
-            git \
-            ant \
-            wget \
-            jekyll \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk --no-cache add \
+            wget
 
 COPY . /publisher
 WORKDIR /publisher
