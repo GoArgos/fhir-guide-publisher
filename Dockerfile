@@ -1,7 +1,8 @@
-FROM jekyll/jekyll
+FROM jekyll/jekyll:4
 
 RUN apk --no-cache add \
-            wget
+            wget \
+            curl
 
 COPY . /publisher
 WORKDIR /publisher
