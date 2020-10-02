@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4
+FROM jekyll/jekyll
 
 RUN apk --no-cache add \
             wget \
