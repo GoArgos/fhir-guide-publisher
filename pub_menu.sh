@@ -1,6 +1,7 @@
 #!/bin/bash
 options=(
     "Run IG Publisher"
+    "Shell"
     "Quit"
 )
 
@@ -10,9 +11,8 @@ PS3="Enter a number (1-${#options[@]}): "
 
 select option in "${options[@]}"; do
     case "$REPLY" in
-        1) ./pub.sh; break ;;
-        2) break ;;
+        1) ./pub.sh ;;
+	2) bash ;;
+        3) break ;;
     esac
 done
-if (( $REPLY < 2 )); then ./pub_menu.sh
-fi

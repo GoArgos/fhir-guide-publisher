@@ -1,9 +1,10 @@
-FROM jekyll/jekyll:4.1.0
+FROM openjdk:11
 
-RUN apk --no-cache add \
-            wget \
-            curl
-
+RUN apt-get update; \
+	apt-get install -y --no-install-recommends \
+		ruby-full \
+		jekyll
+ 
 COPY . /publisher
 WORKDIR /publisher
 

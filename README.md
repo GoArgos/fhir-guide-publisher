@@ -16,5 +16,6 @@ A menu will be displayed:
 
 ```
 1) Run IG Publisher
-2) Quit
+2) Shell
+3) Quit
 ```
