@@ -2,6 +2,8 @@
 
 A Docker image to run the HL7 FHIR IG Publisher.
 
+(Now based on Logica's FHIR IG Base Image.)
+
 ### Use:
 
 Run from the root directory of the IG repo ...

@@ -1,10 +1,5 @@
-FROM openjdk:11
+FROM logicahealth/fhir-ig-base:latest
 
-RUN apt-get update; \
-	apt-get install -y --no-install-recommends \
-		ruby-full \
-		jekyll
- 
 COPY . /publisher
 WORKDIR /publisher
 
